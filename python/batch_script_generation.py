@@ -38,8 +38,8 @@ def make_bash_file(parameters, n_processes=24, n_batch=0):
         bash_command += "python ./python/digits_svm.py " \
             "-T {} -C {} -G {} &\n".format(i_job, parm[0], parm[1])
 
-    bash_command += "date\n"
     bash_command += "wait\n"
+    bash_command += "date\n"
 
     # write batch commands to file
     if not os.path.exists('batch_files'): os.makedirs('batch_files')  # noqa
