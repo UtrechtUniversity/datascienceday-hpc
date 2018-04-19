@@ -14,7 +14,9 @@ import warnings
 
 from sklearn import metrics
 import numpy as np
+import matplotlib
 
+matplotlib.use('Agg')
 warnings.filterwarnings("ignore")
 
 # Load the digits dataset to get the target
