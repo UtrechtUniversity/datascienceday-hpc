@@ -28,7 +28,7 @@ def make_bash_file(parameters, n_processes=24, n_batch=0):
     bash_command = "#!/bin/bash\n"
     bash_command += "#SBATCH -t 00:05:00\n"
     bash_command += "#SBATCH -N 1\n"
-    bash_command += "cd $HOME/workshop_hpc\n"
+    bash_command += "cd $HOME/workshop\n"
     bash_command += "module load python/3.5.2-intel-u2\n"
     bash_command += "date\n"
 
