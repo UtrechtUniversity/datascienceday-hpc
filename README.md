@@ -15,6 +15,11 @@ with an account to a cluster. You will be working on your laptop. We strongly
 advise Windows users to install MobaXterm and Mac users to install Cyberduck
 in advance.
 
+## Manual
+
+- [Mac/Linux](/manual_mac.md)
+- [Windows](/manual_windows.md)
+
 ## Material 
 
 - [Github](https://github.com/UtrechtUniversity/datascienceday-hpc)
