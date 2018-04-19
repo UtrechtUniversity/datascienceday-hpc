@@ -46,6 +46,8 @@ import pandas as pd
 import seaborn as sns
 
 df_result = pd.DataFrame(result)
+df_result['cost'] = df_result['cost'].astype(float)
+df_result['gamma'] = df_result['gamma'].astype(float)
 df_result = df_result.pivot(index='cost', columns='gamma', values='f1')
 sns_fig = sns.heatmap(df_result)
 figure = sns_fig.get_figure()
